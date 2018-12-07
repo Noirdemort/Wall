@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>New Record</title>
+    </head>
+    <body>
+        <h1>Create your new Client here</h1>
+        <form>
+            Name of Client: <input type="text" name="clientName" id="cName" pattern="[A-Za-z ]{2,}" autocomplete="additional-name" required> <br>
+
+            File no: <input type="number" name="fileno" id="fileno"  pattern="[0-9]{1,}"> <br>
+
+            PAN ID: <input type="text" name="pan_card" id="pan" pattern="[A-Za-z]{5}[0-9]{4}[A-Za-z]"> (It should be of pattern ABCDE1234F ) <br>
+
+            Remarks: <input type="text" name="remarks" id="remarks"><br>
+            <input type="submit" onclick="addClientDetails()" /> 
+        </form>
+        
+        <button onclick="location.href='index.html'" type='button'>Go back </button>
+
+        <script src="atc.js"></script>
+    </body>
+</html>

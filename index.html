@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Pathway
+        </title>
+       
+    </head>
+    <!-- <body ng-app='pathway' ng-controller="redSky"> -->
+    <body>
+        <h1> Pathway - The leading solution to User end Client management </h1>
+        <div id='transit'> 
+        <button onclick="location.href='newClient.html'" type='button'> <h3>Add New Client </h3></button>
+        <p> Type name to search: <input id="field" type="search"> <button onclick="search()" > Search</button></p>
+
+        <p id="setter">Search results: <br> </p> 
+        
+        </div>
+        <div id='detainer' style="display: none;">
+            <p id='rever' style='display: none'>
+                
+            </p>
+            <table style="width:100%">
+                <caption>Client info and updation</caption>
+                <tr id='name'>
+                    <td>Name: </td>
+                </tr>
+                <tr id='file'>
+                    <td>File no.:</td>
+                </tr>
+                <tr id='pan'>
+                    <td>PAN ID:</td>
+                </tr>
+                <tr id='remarks'>
+                    <td>Remarks: </td>
+                </tr>
+            </table>          
+            <table id='record' style="width:100%">
+                    <caption>Client filing and Balance details</caption>
+                    <tr>
+                        <td> Assessment Year</td>
+                        <td>Date of Filing</td> 
+                        <td>Return Income</td>
+                        <td>Tax</td>
+                        <td> Total Fee</td>
+                        <td>Fee recd.</td>
+                        <td>Balance due</td> 
+                        <td> Date of recv. </td>
+                    </tr>
+                </table>   
+            
+            <p id='distro'></p>
+            <button onclick="addNewRec">Add new record</button>
+            <button onclick="hellFire()">Delete Client</button>
+
+            <form id="enroll" style="display: none;">
+                Assessment Year:     <input type="number" id="asmt"> <br>
+                Date of filing:      <input type="date" id="dof"> <br>
+                Return Income:       <input type="number" id="rc"> <br>
+                Tax :                <input type="number" id="tax"> <br>
+                Total Fee:            <input type="number"  id="tFee">
+                Fee Recieved:        <input type="number"  id="fRecv">
+                Date of recieving:    <input type="date" id="dor">
+                                        <input type="submit" value="Submit" onclick="adder()">
+            </form>
+
+            <button onclick="goBack()">Go Back!</button>
+        </div>
+
+        
+         <!-- <script src="angular.js"></script> -->
+         <script src="houston.js"></script>
+    </body>
+</html>
