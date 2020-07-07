@@ -6,7 +6,7 @@
   "author": "Resnick Marvolo Riddle",
   "license": "MIT",
   "devDependencies": {
-    "electron": "1.8.8",
+    "electron": "7.2.4",
     "electron-packager": "^12.1.0",
     "python-shell": "^0.5.0",
     "mysql": "^2.15.0",
